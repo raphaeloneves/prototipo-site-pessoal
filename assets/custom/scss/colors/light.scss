@@ -1,0 +1,149 @@
+/* Colors */
+@import "../colors.scss";
+
+/* UI Color Set --------------------------------------------- */
+
+
+.ui-bg-color01   {background-color: $color02 !important;}
+.ui-bg-color02   {background-color: $color20 !important;}
+
+.ui-block-color01   {background-color: $color02 !important;}
+.ui-block-color02   {background-color: $color03 !important;}
+.ui-block-color03   {background-color: $color04 !important;}
+.ui-block-color04   {background-color: $color05 !important;}
+
+.ui-menu-color01 {background-color: $color04 !important;}
+.ui-menu-color02 {background-color: $color05 !important;}
+.ui-menu-color03 {background-color: $color06 !important;}
+.ui-menu-color04 {background-color: $color07 !important;}
+.ui-menu-color05 {background-color: $color08 !important;}
+.ui-menu-color06 {background-color: $color09 !important;}
+
+#top-navigation {
+  .name-title h2 {color: $color25;}
+  .ident {
+    .vc-name {
+      .position {
+        h4 {  color: $color25;  }
+        .position-title {  background: $color03;  }
+        .pdf {
+          background: rgba(0, 0, 0, 0.05);
+          a i:before {  color: $color12;  }
+        }
+      }
+      .name .name-pdf {
+        background: rgba(0, 0, 0, 0.03);
+        a i:before {  color: $color12;  }
+      }
+    }
+  }
+  .menuitem a {
+    i:before {  color: $color17;  }
+    span {  color: $color25;  }
+  }
+}
+
+.hvr-sweep-to-bottom:before {  background: rgba(0, 0, 0, 0.03);  }
+.hvr-sweep-to-right:before {  background: rgba(0, 0, 0, 0.03);  }
+
+#pro-experience.dark {
+  h3 {color: $color30;}
+  .experience {  border-left: 1px solid $color12;  }
+  li.date {color: $color25;}
+  li.company a {
+    color: $color25;
+    //&:hover {color: #8EA8C3;}
+    &:before {  background: $color12;  }
+  }
+  li.position {color: $color25;}
+}
+#circle-skills.dark {
+  .progressbar {
+    .circle {
+      color: $color25;
+      p {color: $color25;}
+    }
+  }
+  h3, h4 {color: $color30 !important;}
+}
+#personal.dark {
+  h3, h4 {color: $color30 !important;}
+  .one p {color: $color30;}
+  .two p {color: $color25;}
+}
+#counts.dark {
+  .count-container {
+    .count {
+      .count-text {  color: $color25;  }
+      .digit {color: $color25;}
+      .count-icon i:before {  color: $color15;  }
+      &:hover .count-icon i:before {color: $hovercolor;}
+    }
+  }
+}
+#details.dark {
+  h3, h4, h5 {color: $color30 !important;}
+  p {color: $color25 !important;}
+}
+
+.subtitle {color: $color10;}
+#details i::before {color: $color12;}
+
+.btn-wh-trans {
+  background: $color07;
+  border: 1px solid transparent;
+  color: $color01 !important;
+  &:hover {
+    background: $color12;
+    color: $color01 !important;  }
+}
+
+.name-title {color: $color01;}
+
+.boxed {
+  background-image: url('../../images/backgrounds/footer_lodyas.png');
+}
+
+footer.dark {
+  border-top: 3px solid $color17;
+  h5 {  color: $color25;  }
+  p {color: $color20;}
+  .copyrights p {color: $color20;}
+  .follow .social li a i {
+    background: $color09;
+    &:before {color: $color01;}
+    &:hover {
+      background: $hovercolor;
+      &:before {color: $color01;}
+    }
+  }
+  input {
+    background: $color04;
+    color: $color25;
+    //&:focus { border-color: $color02;}
+  }
+  a.btn {
+    color: $color01 !important;
+    //border: 1px solid #69A297;
+    background: $color09;
+    &:hover, &:focus {  background: $hovercolor;  }
+  }
+  ::-webkit-input-placeholder {  color: $color09;  }
+  :-moz-placeholder {  color: $color09;  }
+  ::-moz-placeholder {  color: $color09;  opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */}
+  :-ms-input-placeholder {  color: $color09;  }
+
+  .cv-link a {
+    padding: 4px 11px 3px 4px;
+    color: $color25;
+    background: transparent;
+    border: 1px solid $color05;
+    i {
+      &:before {color: $color15;}
+    }
+    &:hover {
+      border-color: $hovercolor; background: transparent; color: $hovercolor;
+      i:before {color: $hovercolor;}
+    }
+  }
+}
